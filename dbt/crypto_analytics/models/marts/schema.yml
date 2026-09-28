@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: fct_daily_price_summary
+    description: One row per coin per day with a simple daily movement category.
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+      - name: snapshot_date
+        tests:
+          - not_null
+
+  - name: fct_moving_averages
+    description: 7-day and 14-day rolling average price per coin.
+    columns:
+      - name: coin_id
+        tests:
+          - not_null
+
+  - name: fct_volatility_metrics
+    description: Daily returns and 7-day rolling volatility (stddev of returns) per coin.
+    columns:
+      - name: coin_id
+        tests:
+          - not_null

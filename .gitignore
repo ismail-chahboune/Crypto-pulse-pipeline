@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.env
+logs/
+airflow-logs/
+dbt/crypto_analytics/target/
+dbt/crypto_analytics/dbt_packages/
+dbt/crypto_analytics/logs/
+.DS_Store
