@@ -1,4 +1,3 @@
-#!/bin/bash
 # Runs automatically on first Postgres container start (via
 # docker-entrypoint-initdb.d). Creates a separate database/user for the
 # analytics warehouse so it stays isolated from Airflow's own metadata DB,
