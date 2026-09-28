@@ -10,9 +10,6 @@ Daily pipeline that:
      (daily summaries, moving averages, rolling volatility).
   4. Runs dbt tests to validate the transformed data.
 
-This DAG is intentionally built with plain PostgresHook + BashOperator
-calls rather than a third-party dbt provider, to keep the dependency
-footprint small and the logic easy to read end-to-end.
 """
 from __future__ import annotations
 
